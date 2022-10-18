@@ -6,7 +6,7 @@ import Head from "next/head";
 import { Router } from 'next/router';
 
 import { ToastContainer } from "react-toastify";
-// <div style={{ textAlign: 'center', padding: '10px'}}>测试环境, 请尽量使用二级域名<Link href="https://www.7he.live" passHref><a target="_blank">https://7he.live</a></Link>访问, 谢谢!</div>
+// <div style={{ textAlign: 'center', padding: '10px'}}>测试环境, 请尽量使用二级域名<Link href="https://www.taojiovo.com" passHref><a target="_blank">https://taojiovo.com</a></Link>访问, 谢谢!</div>
 function MyApp({ Component, pageProps }) {
   Router.events.on('routeChangeComplete', (url) => {
     try{
@@ -34,6 +34,7 @@ function MyApp({ Component, pageProps }) {
         <script dangerouslySetInnerHTML={getAnalyticsTag()} />
         <meta name='viewport' content='initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
       </Head>
+      {/** <div style={{ textAlign: 'center', padding: '10px'}}>测试环境, 请尽量使用二级域名<Link href="https://www.taojiovo.com" passHref><a target="_blank">https://taojiovo.com</a></Link>访问, 谢谢!</div> */}
       <Component {...pageProps} />
       <ToastContainer
         theme="light"
