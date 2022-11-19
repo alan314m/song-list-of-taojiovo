@@ -186,7 +186,7 @@ export default function Home() {
           />
           <meta name="description" content="桃几OvO的歌单" />
 
-          <meta name="theme-color" content=" #332D6A" />
+          <meta name="theme-color" content="#332D6A" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
@@ -349,7 +349,7 @@ export default function Home() {
                     <a target="_blank">
                       <Button
                         className={styles.customRandomButton}
-                        style={{ marginTop: 0, border: "2px solid #DFD1E3" }}
+                        style={{ marginTop: 0, border: "2px solid rgba(248, 203, 225, 0.6)" }}
                       >
                         <img
                           className={styles.biliIcon}
@@ -637,10 +637,10 @@ export default function Home() {
                     <thead>
                       <tr>
                         <th></th>
-                        <th>歌名</th>
-                        <th>歌手</th>
-                        <th>曲风</th>
-                        <th>备注</th>
+                        <th className={styles.noWrapForce}>歌名</th>
+                        <th className={styles.noWrapForce}>歌手</th>
+                        <th className={styles.noWrapForce}>曲风</th>
+                        <th className={styles.noWrapForce}>备注</th>
                       </tr>
                     </thead>
                     <tbody className="songList">
@@ -692,7 +692,7 @@ export default function Home() {
             <br />
             ☆全职电台主播，不是v，介意的朋友关注请慎重
             <br />
-            {/** 每天8-12 15-18 21-0三档准时运行，10min内不算迟到！迟到一次会抽100块舰长红包！ */}
+            {/** 每天8-12 15-18 21-0三档准时运行，10min内不算迟到！迟到一次会抽100块舰长红包！ <br /> */}
             ☆如果到时间没播请看动态，没发请假动态就是有意外情况迟到了～耐心等待一会儿即可
             <br />
             ☆曲风涉猎比较广泛，各种类型都收录了一些。
