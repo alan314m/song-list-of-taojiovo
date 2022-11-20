@@ -9,6 +9,7 @@ song_list = []
 def getSongListUrl():
     url = "https://www.kdocs.cn/api/office/file/sn55vvgOpuyB/download"
     try:
+        print("Retriving song list URL")
         req = urllib.request.Request(url, method="GET")
         resp = urllib.request.urlopen(req)
         jsonObjString = resp.read().decode('utf-8')
@@ -27,7 +28,9 @@ def getSongListUrl():
 def updateSongList():
     url = getSongListUrl()
     try:
+        print("Retriving song list file")
         urllib.request.urlretrieve(url, "歌单.xlsx")
+        print("Song list excel file retrieved")
     except:
         print("Error retrieving the song list excel file")
         exit()
@@ -55,7 +58,7 @@ if __name__ == '__main__':
     #         file.write(json.dumps(song_list))
     #     time.sleep(60*60*24)
 
-    # updateSongList()
+    updateSongList()
     # parseSonglist()
     song_df = pd.read_excel('./歌单.xlsx', skiprows=[0,1])
     song_df = song_df.where(pd.notnull(song_df), None)
