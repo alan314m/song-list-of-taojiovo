@@ -60,12 +60,21 @@ if __name__ == '__main__':
 
     updateSongList()
     # parseSonglist()
+    
+    # Load added songs
+    with open("./public/added_songs.json", 'r') as file:
+        added_songs = json.load(file)
+    
     song_df = pd.read_excel('./歌单.xlsx', skiprows=[0,1])
     song_df = song_df.where(pd.notnull(song_df), None)
     song_df['歌手'] = song_df['歌手'].astype(str)
     for index, row in song_df.iterrows():
-        song_data = {"index": index, "song_name": row[0], "artist": row[1], "properties": row[2], "remarks": row[3]}
-        song_list.append(song_data)
+        song_data = {"index": index, "song_name": row["歌名"], "artist": row["歌手"], "properties": row["曲风"], "remarks": row["备注"]}
+        if {"name": song_data["song_name"], "artist": song_data["artist"]} in added_songs and song_data["song_name"] != "原谅" and song_data["song_name"] != "勇敢":
+            song_data["new"] = 1
+            song_list.insert(0, song_data)
+        else:
+            song_list.append(song_data)
     
-    with open("./public/music_list_taoji.json", 'w') as file:
-        file.write(json.dumps(song_list))
+with open("./public/music_list_taoji.json", 'w') as file:
+    file.write(json.dumps(song_list))

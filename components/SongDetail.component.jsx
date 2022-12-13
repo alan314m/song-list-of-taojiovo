@@ -16,7 +16,7 @@ export default function SongDetail({
         className={
           song.properties.includes("付费")
             ? styles.songRowPaid
-            : song.sticky_top
+            : song.new
             ? styles.songRowTop
             : styles.songRow
         }
@@ -30,16 +30,16 @@ export default function SongDetail({
         }}
       >
         <td className={styles.tableIconTd}>
-          {/** song.sticky_top == 1 ? (
+          {song.new == 1 ? (
             <img
-              src="up_arrow.png"
-              alt="置顶"
+              src="new_icon.png"
+              alt="新曲置顶"
               className={styles.tableIcons}
-              title="置顶曲目"
+              title="置顶新曲"
             ></img>
           ) : (
             <div></div>
-          ) */}
+          )}
           {song.properties.includes("付费") ? (
             <img
               src="100sc.png"
