@@ -1,6 +1,6 @@
 {
   "name": "song_list_of_taojiovo",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "scripts": {
     "dev": "next dev",
