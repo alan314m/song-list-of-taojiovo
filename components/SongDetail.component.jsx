@@ -4,17 +4,16 @@ import styles from "../styles/Home.module.css";
 
 //import { Button } from "react-bootstrap";
 
-export default function SongDetail({
-  filteredSongList,
-  handleClickToCopy,
-}) {
+export default function SongDetail({ filteredSongList, handleClickToCopy }) {
   const deferredFilteredSongList = useDeferredValue(filteredSongList);
 
   return filteredSongList.length !== 0 ? (
     deferredFilteredSongList.map((song) => (
       <tr
         className={
-          song.properties.includes("付费")
+          song.song_name[0]=="×"
+            ? styles.songRowCopyrighted
+            : song.properties.includes("付费")
             ? styles.songRowPaid
             : song.new
             ? styles.songRowTop
@@ -50,10 +49,22 @@ export default function SongDetail({
           ) : (
             <div></div>
           )}
+          {song.song_name[0]=="×" ? (
+            <img
+              src="copyright_lock.png"
+              alt="版权限制"
+              className={styles.tableIcons}
+              title="版权限制，点唱受限"
+            ></img>
+          ) : (
+            <div></div>
+          )}
         </td>
         <td
           className={styles.noWrapForce}
-          id={song.properties.includes("付费") ? `paid ${song.index}` : song.index}
+          id={
+            song.properties.includes("付费") ? `paid ${song.index}` : song.index
+          }
         >
           {song.song_name}
         </td>
