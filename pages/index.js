@@ -90,6 +90,8 @@ export default function Home() {
           song.innerText +
           `"成功复制到剪贴板!记得发100的SC或者水晶球哦~`
       );
+    } else if (song.innerText[0]=="×") {
+      toast.info("版权限制，点唱受限");
     } else {
       //免费曲目
       copy("点歌 " + song.innerText);
@@ -632,7 +634,7 @@ export default function Home() {
           <Row>
             <Col>
               <div className={styles.songListMarco}>
-                <Container fluid>
+                <Container fluid style={{padding: 0}}>
                   <Table responsive>
                     <thead>
                       <tr>

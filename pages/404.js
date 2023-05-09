@@ -17,7 +17,7 @@ export default function Custom404() {
       {/** <div className={styles.avatar}></div> */}
         <Image
             loader={imageLoader}
-            src="taoji_fist_fight.png"
+            src="taoji_fist_fight.webp"
             alt="打开自我介绍"
             width={250}
             height={250}

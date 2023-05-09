@@ -35,6 +35,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="新曲置顶"
               className={styles.tableIcons}
               title="置顶新曲"
+              style={{marginLeft: "0.5rem"}}
             ></img>
           ) : (
             <div></div>
@@ -45,6 +46,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="付费"
               className={styles.tableIcons}
               title="付费曲目(100SC点唱)"
+              style={{marginLeft: "0.5rem"}}
             ></img>
           ) : (
             <div></div>
@@ -55,6 +57,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
               alt="版权限制"
               className={styles.tableIcons}
               title="版权限制，点唱受限"
+              style={{marginLeft: "0.5rem"}}
             ></img>
           ) : (
             <div></div>

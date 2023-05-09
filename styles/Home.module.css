@@ -204,7 +204,7 @@
 
 @media (min-width: 1201px) {
   .outerContainer {
-    background: url("/taoji_background.png") center center no-repeat fixed;
+    background: url("/taoji_background_loosy.webp") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
