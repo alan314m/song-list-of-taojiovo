@@ -91,6 +91,7 @@ export default function Home() {
           `"成功复制到剪贴板!记得发100的SC或者水晶球哦~`
       );
     } else if (song.innerText[0]=="×") {
+      //点唱受限反馈
       toast.info("版权限制，点唱受限");
     } else {
       //免费曲目
