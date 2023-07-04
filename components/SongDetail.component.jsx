@@ -65,6 +65,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
         </td>
         <td
           className={styles.noWrapForce}
+          style={{fontWeight: "bold"}}
           id={
             song.properties.includes("付费") ? `paid ${song.index}` : song.index
           }

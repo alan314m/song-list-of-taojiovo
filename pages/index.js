@@ -119,6 +119,9 @@ export default function Home() {
     ).childNodes[1];
     if (!songName_) {
       toast.info("歌单已经没歌了!");
+    } else if (songName_.innerText[0]=="×") {
+      //如版权限制
+        toast.info("随到了“"+ songName_.innerText +"”，版权限制，点唱受限");
     } else if (songName_.id.includes("paid")) {
       //如付费曲目
       copy("点歌 " + songName_.innerText);
