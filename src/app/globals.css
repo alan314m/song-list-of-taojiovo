@@ -3,25 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --primary: #405db2; /* */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fade {
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.no-wrap {
+	text-wrap: nowrap;
+}
+
+/* Scroll Bar Specific*/
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--primary);
+	border-radius: 1rem;
+}
+
+/* Buttons For Scroll Bar */
+::-webkit-scrollbar-button:single-button {
+	background-color: none;
+	display: block;
+	border-style: solid;
+	height: 10px;
+	width: 10px;
+}
+
+/* Up Arrow */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+	border-width: 0 5px 5px 5px;
+	border-color: transparent transparent var(--primary) transparent;
+}
+/* Down Arrow */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+	border-width: 5px 5px 0 5px;
+	border-color: var(--primary) transparent transparent transparent;
+}
+/* Left Arrow */
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+	border-width: 5px 5px 5px 0;
+	border-color: transparent var(--primary) transparent transparent;
+}
+/* Right Arrow */
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+	border-width: 5px 0 5px 5px;
+	border-color: transparent transparent transparent var(--primary);
 }
