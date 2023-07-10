@@ -29,8 +29,9 @@
   margin: 1rem 0 2rem;
 }
 
-.noWrapForce {
+.noWrapForceRemoveBg {
   white-space: nowrap !important;
+  background-color: rgba(255,255,255,0) !important;
 }
 
 .avatar {
@@ -173,8 +174,9 @@
   cursor: pointer;
 }
 
-.tableIconTd {
+.tableIconTdRemoveBg {
   padding: 0.25rem !important;
+  background-color: rgba(255,255,255,0) !important;
 }
 
 .tableIcons {

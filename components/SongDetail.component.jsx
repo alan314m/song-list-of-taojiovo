@@ -28,7 +28,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
           );
         }}
       >
-        <td className={styles.tableIconTd}>
+        <td className={styles.tableIconTdRemoveBg}>
           {song.new == 1 ? (
             <img
               src="new_icon.png"
@@ -64,7 +64,7 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
           )}
         </td>
         <td
-          className={styles.noWrapForce}
+          className={styles.noWrapForceRemoveBg}
           style={{fontWeight: "bold"}}
           id={
             song.properties.includes("付费") ? `paid ${song.index}` : song.index
@@ -72,14 +72,14 @@ export default function SongDetail({ filteredSongList, handleClickToCopy }) {
         >
           {song.song_name}
         </td>
-        <td className={styles.noWrapForce}>{song.artist}</td>
-        <td className={styles.noWrapForce}>{song.properties}</td>
-        <td className={styles.noWrapForce}>{song.remarks}</td>
+        <td className={styles.noWrapForceRemoveBg}>{song.artist}</td>
+        <td className={styles.noWrapForceRemoveBg}>{song.properties}</td>
+        <td className={styles.noWrapForceRemoveBg}>{song.remarks}</td>
       </tr>
     ))
   ) : (
     <tr>
-      <td className="display-6 text-center" colSpan="6" id="noSongInList">
+      <td className={styles.noWrapForceRemoveBg + " display-6 text-center"} colSpan="6" id="noSongInList">
         歌单里没有诶~隐藏歌单碰碰运气!
       </td>
     </tr>
