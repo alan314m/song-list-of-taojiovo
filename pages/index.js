@@ -685,7 +685,7 @@ export default function Home() {
           <div></div>
         )}
         <footer className={styles.footer}>
-          Copyright © 2022 桃宝和她的家人们
+          Copyright © 2022-2023 桃宝和她的家人们
         </footer>
       </Container>
       <Offcanvas show={showIntro} onHide={handleCloseIntro}>
