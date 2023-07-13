@@ -337,7 +337,8 @@ export default function Home() {
                 <h1
                   className={"display-6 text-center pt-3 " + styles.grandTitle}
                 >
-                  <b>桃几OvO的歌单</b>
+                  <b>桃几OvO</b><br />
+                  <b>和她会略略略的{filteredSongList.length}首歌</b>
                 </h1>
                 <p className="text-center py-3 mb-xl-5 text-muted">
                   轻点歌名可以复制哦
@@ -509,31 +510,17 @@ export default function Home() {
                         </Button>
                       </div>
                     </Col>
-                    <Col xs={4} md={2} className="d-block d-sm-none d-md-block d-lg-none d-xl-none">
+                    <Col xs={4} md={2}>
                       <div className="d-grid">
                         <Button
                           className={
-                            categorySelection.properties == "经典老歌"
+                            categorySelection.properties == "土嗨"
                               ? styles.customCategoryButtonActive
                               : styles.customCategoryButton
                           }
-                          onClick={(e) => setPropertiesState("经典老歌")}
+                          onClick={(e) => setPropertiesState("土嗨")}
                         >
-                          经典
-                        </Button>
-                      </div>
-                    </Col>
-                    <Col xs={4} md={2} className="d-none d-sm-block d-md-none d-lg-block d-xl-block">
-                      <div className="d-grid">
-                        <Button
-                          className={
-                            categorySelection.properties == "经典老歌"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => setPropertiesState("经典老歌")}
-                        >
-                          经典老歌
+                          土嗨
                         </Button>
                       </div>
                     </Col>

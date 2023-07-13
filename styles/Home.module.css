@@ -204,6 +204,12 @@
   margin-bottom: 1rem;
 }
 
+@media (min-width: 1920px) {
+  .introBox {
+    line-height: 1.75rem !important;
+  }
+}
+
 @media (min-width: 1201px) {
   .outerContainer {
     background: url("/taoji_background_loosy.webp") center center no-repeat fixed;
@@ -215,11 +221,12 @@
 
   .introBox {
     position: relative;
-    left: 35%;
+    left: 40%;
     top: -95%;
     width: 60%;
     opacity: 0;
     transition: opacity 1s;
+    line-height: calc(0.5rem + 1.4vw);
   }
 
   .introBoxInnerDiv {
