@@ -70,6 +70,8 @@ if __name__ == '__main__':
     song_df['歌手'] = song_df['歌手'].astype(str)
     for index, row in song_df.iterrows():
         song_data = {"index": index, "song_name": row["歌名"], "artist": row["歌手"], "properties": row["曲风"], "remarks": row["备注"]}
+        if song_data['artist'] == 'None':
+            song_data['artist'] = '群星'
         if {"name": song_data["song_name"], "artist": song_data["artist"]} in added_songs:
             song_data["new"] = 1
             song_list.insert(0, song_data)
