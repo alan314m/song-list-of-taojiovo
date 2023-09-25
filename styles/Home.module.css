@@ -15,8 +15,8 @@
   flex-grow: 1;
 }
 
-.main {
-  min-height: 86vh;
+.mainContent {
+  min-height: 100vh;
 }
 
 .grandTitle {
@@ -26,7 +26,7 @@
 .songListMarco {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
 }
 
 .noWrapForceRemoveBg {
@@ -72,7 +72,7 @@
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 1rem;
-  margin-top: 12px;
+  margin-top: 1rem;
   cursor: text;
 }
 
@@ -85,7 +85,7 @@
   color: #332D6A;
   border-radius: 1rem;
   border: none;
-  margin-top: 12px;
+  margin-top: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }

@@ -90,7 +90,7 @@ export default function Home() {
           song.innerText +
           `"成功复制到剪贴板!记得发100的SC或者水晶球哦~`
       );
-    } else if (song.innerText[0]=="×") {
+    } else if (song.innerText[0] == "×") {
       //点唱受限反馈
       toast.info("版权限制，点唱受限");
     } else {
@@ -119,9 +119,9 @@ export default function Home() {
     ).childNodes[1];
     if (!songName_) {
       toast.info("歌单已经没歌了!");
-    } else if (songName_.innerText[0]=="×") {
+    } else if (songName_.innerText[0] == "×") {
       //如版权限制
-        toast.info("随到了“"+ songName_.innerText +"”，版权限制，点唱受限");
+      toast.info("随到了“" + songName_.innerText + "”，版权限制，点唱受限");
     } else if (songName_.id.includes("paid")) {
       //如付费曲目
       copy("点歌 " + songName_.innerText);
@@ -286,42 +286,169 @@ export default function Home() {
             content="/a2hs/ms-icon-144x144.png"
           />
 
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/12.9__iPad_Pro_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.9__iPad_Air_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.5__iPad_Air_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.2__iPad_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14_Pro_Max_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14_Pro_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_11__iPhone_XR_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/12.9__iPad_Pro_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.9__iPad_Air_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.5__iPad_Air_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.2__iPad_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14_Pro_Max_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14_Pro_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_11__iPhone_XR_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png" />
-          <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png" />
-
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/12.9__iPad_Pro_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/10.9__iPad_Air_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/10.5__iPad_Air_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/10.2__iPad_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_14_Pro_Max_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_14_Pro_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/iPhone_11__iPhone_XR_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+            href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+            href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/12.9__iPad_Pro_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/10.9__iPad_Air_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/10.5__iPad_Air_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/10.2__iPad_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_14_Pro_Max_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_14_Pro_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/iPhone_11__iPhone_XR_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+            href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+            href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png"
+          />
         </Head>
 
-        <section className={styles.main}>
+        <section className={styles.mainContent}>
           {/** 头像和标题 */}
           <Row>
             <Col className={styles.titleCol}>
@@ -337,7 +464,8 @@ export default function Home() {
                 <h1
                   className={"display-6 text-center pt-3 " + styles.grandTitle}
                 >
-                  <b>桃几OvO</b><br />
+                  <b>桃几OvO</b>
+                  <br />
                   <b>和她会略略略的{filteredSongList.length}首歌</b>
                 </h1>
                 <p className="text-center py-3 mb-xl-5 text-muted">
@@ -349,24 +477,27 @@ export default function Home() {
                   <div className={styles.introTitle}>
                     <h5>桃几的自我介绍</h5>
                     <div className="d-flex">
-                    <Link
-                    href="https://www.tapechat.net/uu/taojiovo/8JIDAX1U"
-                    passHref
-                  >
-                    <a target="_blank">
-                      <Button
-                        className={styles.customRandomButton}
-                        style={{ marginTop: 0, border: "2px solid rgba(248, 203, 225, 0.6)" }}
+                      <Link
+                        href="https://www.tapechat.net/uu/taojiovo/8JIDAX1U"
+                        passHref
                       >
-                        <img
-                          className={styles.biliIcon}
-                          src="/tapechat.png"
-                          alt="提问箱贴图"
-                        />{" "}
-                        匿名提问箱 <ChevronSVG />
-                      </Button>
-                    </a>
-                  </Link>
+                        <a target="_blank">
+                          <Button
+                            className={styles.customRandomButton}
+                            style={{
+                              marginTop: 0,
+                              border: "2px solid rgba(248, 203, 225, 0.6)",
+                            }}
+                          >
+                            <img
+                              className={styles.biliIcon}
+                              src="/tapechat.png"
+                              alt="提问箱贴图"
+                            />{" "}
+                            匿名提问箱 <ChevronSVG />
+                          </Button>
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   {/** 
@@ -625,7 +756,7 @@ export default function Home() {
           <Row>
             <Col>
               <div className={styles.songListMarco}>
-                <Container fluid style={{padding: 0}}>
+                <Container fluid style={{ padding: 0 }}>
                   <Table responsive>
                     <thead>
                       <tr>
@@ -647,33 +778,34 @@ export default function Home() {
               </div>
             </Col>
           </Row>
-        </section>
-        {showToTopButton ? (
-          <button
-            onClick={scrollToTop}
-            className={styles.backToTopBtn}
-            title="返回顶部"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-chevron-up"
-              viewBox="0 0 16 16"
+
+          {showToTopButton ? (
+            <button
+              onClick={scrollToTop}
+              className={styles.backToTopBtn}
+              title="返回顶部"
             >
-              <path
-                fillRule="evenodd"
-                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-              />
-            </svg>
-          </button>
-        ) : (
-          <div></div>
-        )}
-        <footer className={styles.footer}>
-          Copyright © 2022-2023 桃宝和她的家人们
-        </footer>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-up"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                />
+              </svg>
+            </button>
+          ) : (
+            <div></div>
+          )}
+          <footer className={styles.footer}>
+            Copyright © 2022-2023 桃宝和她的家人们
+          </footer>
+        </section>
       </Container>
       <Offcanvas show={showIntro} onHide={handleCloseIntro}>
         <Offcanvas.Header closeButton>
