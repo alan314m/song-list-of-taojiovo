@@ -803,7 +803,39 @@ export default function Home() {
             <div></div>
           )}
           <footer className={styles.footer}>
-            Copyright © 2022-2023 桃宝和她的家人们
+            <Container>
+              <Row>
+                <Col xs={12} lg={5} className="text-center text-lg-end">
+                  Copyright © 2022-2023 桃宝和她的家人们
+                </Col>
+                <Col xs={12} lg={2} className="text-center d-none d-lg-block">
+                  |
+                </Col>
+                <Col
+                  xs={12}
+                  lg={5}
+                  className="text-center text-lg-start pt-2 pt-lg-0"
+                >
+                  <Link href="https://beian.miit.gov.cn/" passHref>
+                    <a
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "#332D6A" }}
+                    >
+                      <div className="">
+                        <Image
+                          loader={imageLoader}
+                          src="public_safety_police.webp"
+                          alt="公安部备案"
+                          width={16}
+                          height={16}
+                        />
+                        苏ICP备17049545号-6
+                      </div>
+                    </a>
+                  </Link>
+                </Col>
+              </Row>
+            </Container>
           </footer>
         </section>
       </Container>

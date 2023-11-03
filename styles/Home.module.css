@@ -1,19 +1,14 @@
 .footer {
-  display: flex;
-  flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #332D6A;
   color: #332D6A;
-  justify-content: center;
-  align-items: center;
 }
-
-.footer a {
+/* .footer a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-}
+} */
 
 .mainContent {
   min-height: 100vh;
