@@ -821,16 +821,7 @@ export default function Home() {
                       target="_blank"
                       style={{ textDecoration: "none", color: "#332D6A" }}
                     >
-                      <div className="">
-                        <Image
-                          loader={imageLoader}
-                          src="public_safety_police.webp"
-                          alt="公安部备案"
-                          width={16}
-                          height={16}
-                        />
-                        苏ICP备17049545号-6
-                      </div>
+                        ovo.fan - ICP证: 苏ICP备17049545号-6
                     </a>
                   </Link>
                 </Col>
