@@ -185,12 +185,12 @@ export default function Home() {
       </div>
       <Container>
         <Head>
-          <title>桃几OvO的歌单</title>
+          <title>桃几OvO的歌单 - 虚拟形象设定展示页</title>
           <meta
             name="keywords"
-            content="桃几OvO,B站,bilibili,哔哩哔哩,电台唱见,歌单"
+            content="桃几OvO,B站,bilibili,哔哩哔哩,电台唱见,歌单,虚拟形象"
           />
-          <meta name="description" content="桃几OvO的歌单" />
+          <meta name="description" content="桃几OvO的歌单 - 虚拟形象设定展示页" />
 
           <meta name="theme-color" content="#332D6A" />
           <meta name="mobile-web-app-capable" content="yes" />
