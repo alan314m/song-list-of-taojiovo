@@ -65,7 +65,8 @@ if __name__ == '__main__':
     with open("./public/added_songs.json", 'r') as file:
         added_songs = json.load(file)
     
-    song_df = pd.read_excel('./歌单.xlsx', skiprows=[0,1])
+    # song_df = pd.read_excel('./歌单.xlsx', skiprows=[0,1]) //Update Time Header Removed
+    song_df = pd.read_excel('./歌单.xlsx')
     song_df = song_df.where(pd.notnull(song_df), None)
     song_df['歌手'] = song_df['歌手'].astype(str)
     for index, row in song_df.iterrows():
