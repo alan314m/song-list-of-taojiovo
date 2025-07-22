@@ -476,7 +476,7 @@ export default function Home() {
                 <div className={styles.introBoxInnerDiv}>
                   <div className={styles.introTitle}>
                     <h5>桃几的自我介绍</h5>
-                    <div className="d-flex">
+                    {/* <div className="d-flex">
                       <Link
                         href="https://www.tapechat.net/uu/taojiovo/8JIDAX1U"
                         passHref
@@ -498,7 +498,7 @@ export default function Home() {
                           </Button>
                         </a>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                   {/** 
                                   <p className={styles.introParagraph}>
@@ -806,7 +806,7 @@ export default function Home() {
             <Container>
               <Row>
                 <Col xs={12} lg={5} className="text-center text-lg-end">
-                  Copyright © 2022-2023 桃宝和她的家人们
+                  Copyright © 2022-2025 桃宝和她的家人们
                 </Col>
                 <Col xs={12} lg={2} className="text-center d-none d-lg-block">
                   |
@@ -859,7 +859,7 @@ export default function Home() {
             <br />
             ☆希望我唱的歌能让你快乐～
           </p>
-          <Link href="https://www.tapechat.net/uu/taojiovo/8JIDAX1U" passHref>
+          {/* <Link href="https://www.tapechat.net/uu/taojiovo/8JIDAX1U" passHref>
             <a target="_blank">
               <Button
                 className={styles.customRandomButton}
@@ -873,7 +873,7 @@ export default function Home() {
                 匿名提问箱 <ChevronSVG />
               </Button>
             </a>
-          </Link>
+          </Link> */}
         </Offcanvas.Body>
       </Offcanvas>
     </div>
