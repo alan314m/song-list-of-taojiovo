@@ -687,13 +687,13 @@ export default function Home() {
                       <div className="d-grid">
                         <Button
                           className={
-                            categorySelection.properties == "流行"
+                            categorySelection.properties == "RAP"
                               ? styles.customCategoryButtonActive
                               : styles.customCategoryButton
                           }
-                          onClick={(e) => setPropertiesState("流行")}
+                          onClick={(e) => setPropertiesState("RAP")}
                         >
-                          流行
+                          RAP
                         </Button>
                       </div>
                     </Col>
